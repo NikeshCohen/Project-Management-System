@@ -1,13 +1,24 @@
 # Project Management System
 
 - [Overview](#overview)
-  - [Features](#features)
 - [Getting Started](#getting-started)
-- [Author](#author)
+- [Features](#features)
+- [Database](#database)
 
-# Overview
+## Overview
 
 This a mock project management system created for a fictional construction company. This project is terminal based and was built in Java and MySQL. The PMS will assist with logging and keeping track of various construction projects.
+
+## Getting Started
+
+To get started simply create a new database in MySQL. On completion of the creation of the database open the "Create-Database.txt" file. You can copy and paste the creation of the different tables in your MySQL CLI. You can customize the data as you wish, or use the data provided. Ensure you update "{your database name}", "{user}" and "{password} with your information in line 11-13 in "src/Main.java".
+
+```java
+    // JDBC connection details
+    static final String JDBC_URL = "jdbc:mysql://localhost:3306/{your database name}?useSSL=false";
+    static final String USER = "{user}";
+    static final String PASSWORD = "{password}";
+```
 
 ## Features
 
@@ -81,4 +92,9 @@ This terminal based project is packed with multiple extremely usefully features 
         }
   }
   ```
-"# Project-Management-System" 
+
+## Database
+
+Below is the EDR diagram for the relational database.
+
+![](/images/ERD.png "EDR Diagram").
