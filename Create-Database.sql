@@ -1,4 +1,4 @@
-// ================= Create Architect Table ================= //
+-- // ================= Create Architect Table ================= //
 
 CREATE TABLE Architect (
   Architect_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -9,7 +9,7 @@ CREATE TABLE Architect (
 );
 
 
-// ================= Create Contractor Table ================= //
+-- // ================= Create Contractor Table ================= //
 
 CREATE TABLE Contractor (
   Contractor_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -19,7 +19,7 @@ CREATE TABLE Contractor (
   Contractor_address VARCHAR(255) NOT NULL
 );
 
-// ================= Create Customer Table ================= //
+-- // ================= Create Customer Table ================= //
 
 CREATE TABLE Customer (
   Customer_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -29,7 +29,7 @@ CREATE TABLE Customer (
   Customer_address VARCHAR(255) NOT NULL
 );
 
-// ================= Create PoisePMS Table ================= //
+ -- // ================= Create PoisePMS Table ================= //
 
 CREATE TABLE PoisePMS (
     Project_num INT PRIMARY KEY,
@@ -50,7 +50,7 @@ CREATE TABLE PoisePMS (
     FOREIGN KEY (Customer_id) REFERENCES Customer(Customer_id)
 );
 
-// ================= Insert Values ================= //
+-- -- // ================= Insert Values ================= //
 
 
 INSERT INTO Architect (Architect_name, Architect_cell_num, Architect_email, Architect_address)
